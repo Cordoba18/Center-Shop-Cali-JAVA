@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\USUARIO\OneDrive\Escritorio\Center Shop Cali\Center Shop Cali - JAVA\.metadata\.plugins\org.eclipse.jdt.core
+2405723976.index
+798038735.index
+217047792.index
+4029287125.index
+1865797976.index
