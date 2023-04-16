@@ -56,7 +56,7 @@ public class AdministradorController implements ActionListener, MouseListener, K
 			admin.setVisible(false);
 			Index I = new Index();
 			IndexController IC = new IndexController(I);
-		
+			System.out.println("hi");
 		}
 		
 		if(e.getSource().equals(admin.btnConsultarempresas)) {
