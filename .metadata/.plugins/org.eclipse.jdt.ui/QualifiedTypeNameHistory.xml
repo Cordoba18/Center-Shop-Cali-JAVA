@@ -54,10 +54,10 @@
     <fullyQualifiedTypeName name="org.apache.commons.net.ftp.FTPClient"/>
     <fullyQualifiedTypeName name="java.nio.file.Path"/>
     <fullyQualifiedTypeName name="java.nio.file.Files"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-    <fullyQualifiedTypeName name="herramientas.Ayudas"/>
     <fullyQualifiedTypeName name="sql.Consultas"/>
     <fullyQualifiedTypeName name="modelo.Usuario"/>
     <fullyQualifiedTypeName name="vista.Producto"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="herramientas.Ayudas"/>
 </qualifiedTypeNameHistroy>

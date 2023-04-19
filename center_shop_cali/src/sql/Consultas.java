@@ -543,7 +543,7 @@ public class Consultas {
 	public boolean ConsultarEmpresa(Usuario Loguear) {
 		String pass = (Loguear.getContrasena());
         Conexion conectar = new Conexion();
-        String sql = "SELECT * FROM users WHERE correo = '" + Loguear.getCorreo() + "' AND estado='activo'";
+        String sql = "SELECT * FROM users WHERE correo = '" + Loguear.getCorreo() + "'";
         ResultSet rs;
         boolean numero = false;
         try {

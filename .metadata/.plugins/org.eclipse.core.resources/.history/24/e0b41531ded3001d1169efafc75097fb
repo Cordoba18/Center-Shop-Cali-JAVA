@@ -1,6 +1,5 @@
 package controlador;
 import java.awt.Event;
-import java.awt.HeadlessException;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -350,6 +349,15 @@ public class IndexController implements ActionListener, MouseListener, KeyListen
 	private void Iniciar() {
 		
 		I.setVisible(true);
+		Ayudas ayuda = new Ayudas();
+		try {
+			
+			System.out.println(ayuda.Cifra("12345678"));
+		} catch (InvalidKeyException | UnsupportedEncodingException | NoSuchAlgorithmException | NoSuchPaddingException
+				| IllegalBlockSizeException | BadPaddingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 	private void Sesion() {
@@ -456,15 +464,6 @@ public class IndexController implements ActionListener, MouseListener, KeyListen
 	public void keyPressed(KeyEvent e) {
 		
 		if(e.getKeyCode()==KeyEvent.VK_ENTER) {
-			Ayudas ayuda = new Ayudas();
-			
-			try {
-				System.out.println(ayuda.Cifra(I.textBuscador.getText()));
-			} catch (HeadlessException | InvalidKeyException | UnsupportedEncodingException | NoSuchAlgorithmException
-					| NoSuchPaddingException | IllegalBlockSizeException | BadPaddingException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
 			if(I.textBuscador.getText().isEmpty() || I.textBuscador.getText().equals(" ")) {
 				JOptionPane.showMessageDialog(null, "ESCRIBE UN PRODUCTO A BUSCAR");
 			}else{

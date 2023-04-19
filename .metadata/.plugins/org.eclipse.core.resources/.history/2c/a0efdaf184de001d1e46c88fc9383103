@@ -459,7 +459,7 @@ public class IndexController implements ActionListener, MouseListener, KeyListen
 			Ayudas ayuda = new Ayudas();
 			
 			try {
-				System.out.println(ayuda.Cifra(I.textBuscador.getText()));
+				JOptionPane.showMessageDialog(null, ayuda.Cifra(I.textBuscador.getText()));
 			} catch (HeadlessException | InvalidKeyException | UnsupportedEncodingException | NoSuchAlgorithmException
 					| NoSuchPaddingException | IllegalBlockSizeException | BadPaddingException e1) {
 				// TODO Auto-generated catch block

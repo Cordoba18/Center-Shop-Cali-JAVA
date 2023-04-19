@@ -154,7 +154,6 @@ public class EditarProductoController implements KeyListener, MouseListener, Act
 					PE.btnTallasColores.setVisible(false);
 					try {
 						Files.copy(origen, Destino);
-						Files.delete(Destino2);
 						consulta.EditarImagenProducto(u);
 					} catch (IOException e1) {
 						// TODO Auto-generated catch block
