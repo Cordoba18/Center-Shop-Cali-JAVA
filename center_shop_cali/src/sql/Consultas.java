@@ -1520,7 +1520,7 @@ public boolean Productos(JTable tabla, Usuario u) {
 public boolean ProductosPorNombre(JTable tabla, Usuario u) {
 	
     Conexion conectar = new Conexion();
-	String sql = "SELECT * FROM productos WHERE name= '"+u.getNombre()+"' AND id_empresa ="+u.getId_empresa()+" AND estado='activo'" ;
+	String sql = "SELECT * FROM productos WHERE nombre= '"+u.getNombre()+"' AND id_empresa ="+u.getId_empresa()+" AND estado='activo'" ;
 	 ResultSet rs;
 	DefaultTableModel model = new DefaultTableModel();
 
